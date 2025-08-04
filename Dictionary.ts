@@ -62,12 +62,6 @@ export class Dictionary {
       }
     }
 
-    for (const node of curr) {
-      if (node.isWord) {
-        return node.isWord
-      }
-    }
-
-    return false
+    return curr.some((node) => node.isWord)
   }
 }
