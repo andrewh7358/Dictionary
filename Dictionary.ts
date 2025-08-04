@@ -3,8 +3,8 @@
  * 
  * function addWords(input)
  * function isInDict(word)
- * 
- * addWords(['apple', 'banana', 'orange'])
+ *
+ * addWords(['Apple', 'banana', 'orange'])
  * isInDict('apple') // true
  * isInDict('app') // false
  * isInDict('appliance') // false
@@ -26,7 +26,7 @@ export class Dictionary {
 
   addWords(input: string[]): void {
     for (const word of input) {
-      this.dictionary.insert(word)
+      this.dictionary.insert(word.toLocaleLowerCase())
     }
   }
 
@@ -37,7 +37,8 @@ export class Dictionary {
 
     let curr = [this.dictionary]
 
-    for (const letter of word) {
+    const lowerWord = word.toLocaleLowerCase()
+    for (const letter of lowerWord) {
       // wildcard search, match all
       if (letter === '*') {
         let next: LetterNode[] = []
