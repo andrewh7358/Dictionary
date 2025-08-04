@@ -1,4 +1,4 @@
-# Dictionary Implementation
+# Dictionary
 
 Dictionary implementation with wildcard searching in TypeScript.
 
