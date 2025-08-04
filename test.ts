@@ -17,6 +17,10 @@ console.log(dictionary.isInDict('*at')) // true
 console.log(dictionary.isInDict('b*t')) // true
 console.log(dictionary.isInDict('cr*')) // false
 
+console.log(dictionary.isInDict('**t')) // true
+console.log(dictionary.isInDict('**z')) // false
+console.log(dictionary.isInDict('*a*')) // false
+
 // does not destory existing words
 console.log('Does not destory existing words')
 console.log(dictionary.isInDict('apple')) // true
