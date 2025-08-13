@@ -1,6 +1,6 @@
 # Dictionary
 
-Dictionary implementation with wildcard searching in TypeScript.
+Dictionary implementation with wildcard searching in TypeScript using a trie.
 
 `addWords`: Add new words to the dictionary. This is not case sensitive.
 
