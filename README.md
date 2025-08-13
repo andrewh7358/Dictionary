@@ -1,6 +1,6 @@
 # Dictionary
 
-Dictionary implementation with wildcard searching in TypeScript using a trie.
+Dictionary implementation with wildcard searching in TypeScript using a trie. Add words to make your own custom dictionary.
 
 `addWords`: Add new words to the dictionary. This is not case sensitive.
 
